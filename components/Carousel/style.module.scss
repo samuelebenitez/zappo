@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@100;300;400&family=Krona+One&display=swap");
+
+.article {
+  width: 100%;
+  padding: 1em 0 0 0.8em;
+  background-color: #0c0d0e;
+
+  .carousel_title {
+    color: white;
+    margin: 1rem 0;
+    font-family: "Krona One", sans-serif;
+    text-transform: uppercase;
+  }
+
+  .cards_container {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 1rem;
+    overflow-y: auto;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+}
