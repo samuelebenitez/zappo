@@ -25,7 +25,7 @@ export default function Home() {
           <div className={styles.down}>
             <h2>bienvenido</h2>
             <p>Pulse siguiente para elegir el servicio</p>
-            <Link href="/Servicios" passHref>
+            <Link href="/servicios" passHref>
               <button>siguiente</button>
             </Link>
           </div>
