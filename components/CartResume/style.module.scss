@@ -1,0 +1,41 @@
+.cart_resume_container {
+  border-radius: 8px;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 90%;
+  margin: 2rem 1rem;
+  background-color: rgba(#0c0d0e, 0.8);
+  backdrop-filter: blur(4px);
+  padding: 0.5em;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  justify-content: space-evenly;
+  z-index: 100;
+  display: flex;
+
+  border: 1px solid white;
+  .cart_resume_button {
+    align-self: flex-end;
+    button {
+      background-color: red;
+      padding: 0.5em 1em;
+      color: white;
+      font-weight: 700;
+      border-radius: 8px;
+      border: none;
+      text-align: center;
+    }
+  }
+  .cart_resume_title {
+    padding: 1em 0.5em;
+    font-size: 0.8em;
+    font-family: "Krona One", sans-serif;
+  }
+  .cart_resume_products {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+  }
+}

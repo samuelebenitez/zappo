@@ -1,71 +1,74 @@
-@import url("https://fonts.googleapis.com/css2?family=Jost:wght@100;300;400&family=Krona+One&display=swap");
-
-.screen {
-  .container {
-    height: 90vh;
-    background-color: #0c0d0e;
-    overflow-y: scroll;
-    header {
-      width: 100%;
-      border: none;
-      background: white;
-      .inner_header {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 1em;
-        padding: 1em 0 0 0;
-        .logo_box {
-          width: 10%;
-        }
-        .title_box {
-          h1 {
-            color: #0c0d0e;
-            font-family: "Krona One", sans-serif;
-            text-transform: uppercase;
-            font-size: 1.3em;
+.back {
+  background-color: #0c0d0e;
+  width: 100vw;
+  height: 100vh;
+  .screen {
+    .container {
+      height: 90vh;
+      background-color: #0c0d0e;
+      overflow-y: scroll;
+      header {
+        width: 100%;
+        border: none;
+        background: white;
+        .inner_header {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 1em;
+          padding: 1em 0 0 0;
+          .logo_box {
+            width: 10%;
+          }
+          .title_box {
+            h1 {
+              color: #0c0d0e;
+              font-family: "Krona One", sans-serif;
+              text-transform: uppercase;
+              font-size: 1.3em;
+            }
           }
         }
       }
+      .wave {
+        aspect-ratio: 900/90;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-image: url("../../assets/wave.svg");
+        transform: rotate(180deg);
+      }
+      .products {
+        background-color: #0c0d0e;
+      }
     }
-    .wave {
-      aspect-ratio: 900/90;
-      width: 100%;
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: cover;
-      background-image: url("../../assets/wave.svg");
-      transform: rotate(180deg);
-    }
-    .products {
+
+    .call_to_action {
+      height: 10vh;
+      width: 100vw;
       background-color: #0c0d0e;
-    }
-  }
+      padding: 0.8em;
+      display: flex;
+      gap: 1em;
 
-  .call_to_action {
-    height: 10vh;
-    width: 100vw;
-    background-color: #0c0d0e;
-    padding: 0.8em;
-    display: flex;
-    gap: 1em;
-
-    .cart_button {
-      width: 20%;
-      border: none;
-      border-radius: 8px;
-      background-color: white;
-      cursor: pointer;
-    }
-    .buy_button {
-      width: 80%;
-      border: none;
-      border-radius: 8px;
-      font-family: "Jost", sans-serif;
-      font-size: 1.1em;
-      text-transform: uppercase;
-      background-color: white;
-      cursor: pointer;
+      .cart_button {
+        width: 20%;
+        border: none;
+        border-radius: 8px;
+        background-color: white;
+        cursor: pointer;
+      }
+      .buy_button {
+        width: 80%;
+        border: none;
+        border-radius: 8px;
+        font-family: "Jost", sans-serif;
+        font-size: 1.1em;
+        text-transform: uppercase;
+        background-color: white;
+        cursor: pointer;
+      }
     }
   }
 }

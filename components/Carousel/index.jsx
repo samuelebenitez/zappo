@@ -10,6 +10,10 @@ export default function Carousel() {
         <Card />
         <Card />
         <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
       </div>
     </article>
   );

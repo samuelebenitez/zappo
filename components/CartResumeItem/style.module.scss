@@ -1,0 +1,27 @@
+.cart_resume_item {
+  border: 1px solid white;
+  padding: 0 1em;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 8px;
+  gap: 1em;
+  .cart_resume_product {
+    font-size: 1.3em;
+    text-align: center;
+    font-family: "Jost", sans-serif;
+    .product_name {
+    }
+    .product_price {
+    }
+  }
+  .cart_resume_buttons {
+    .button_delete {
+      border: none;
+      padding: 0.2em 0.4em;
+      border-radius: 8px;
+      background-color: white;
+      cursor: pointer;
+    }
+  }
+}
