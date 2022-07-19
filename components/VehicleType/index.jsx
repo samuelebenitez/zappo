@@ -8,7 +8,7 @@ export default function VehicleType({ vehicle }) {
   const router = useRouter();
 
   function showMe(vehi) {
-    vehicleContext.getVehicles(vehi);
+    vehicleContext.selectVehicle(vehi);
     router.push("/Services");
   }
 

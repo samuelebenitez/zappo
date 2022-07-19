@@ -4,7 +4,7 @@ import axios from "axios";
 import VehicleContext from "./VehicleContext";
 import VehicleReducer from "./VehicleReducer";
 
-import { GET_VEHICLE } from "../types";
+import { GET_VEHICLE, SELECT_VEHICLE } from "../types";
 
 const VehicleState = (props) => {
   const initialState = {
@@ -22,13 +22,13 @@ const VehicleState = (props) => {
     }
   };
 
-  //   const getProfile = async (id) => {
-  //     try {
-  //       const res = await axios.get("https://reqres.in/api/users/" + id);
-  //       const { data }= res;
-  //       dispatch({ type: GET_PROFILE, payload: data.data });
-  //     } catch (error) {}
-  //   };
+  const selectVehicle = (vehicle) => {
+    try {
+      dispatch({ type: SELECT_VEHICLE, payload: vehicle });
+    } catch (error) {
+      console.error(error);
+    }
+  };
 
   return (
     <VehicleContext.Provider
@@ -36,6 +36,7 @@ const VehicleState = (props) => {
         vehicle: state.vehicle,
         selectedVehicle: state.selectedVehicle,
         getVehicles,
+        selectVehicle,
         // getProfile,
       }}
     >

@@ -1,4 +1,5 @@
 import { GET_VEHICLE } from "../types";
+import { SELECT_VEHICLE } from "../types";
 
 // eslint-disable-next-line import/no-anonymous-default-export
 export default (state, action) => {
@@ -10,11 +11,11 @@ export default (state, action) => {
         ...state,
         vehicle: payload,
       };
-    // case GET_PROFILE:
-    //   return {
-    //     ...state,
-    //     selectedUser: payload,
-    //   };
+    case SELECT_VEHICLE:
+      return {
+        ...state,
+        selectedVehicle: payload,
+      };
     default:
       return state;
   }

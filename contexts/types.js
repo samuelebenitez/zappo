@@ -1,1 +1,2 @@
 export const GET_VEHICLE = "GET_VEHICLE";
+export const SELECT_VEHICLE = "SELECT_VEHICLE";

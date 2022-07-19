@@ -11,9 +11,6 @@ export default function Card({ card }) {
   const [showInfo, setShowInfo] = useToggle();
   const { title, description, price } = card;
 
-  const { vehicle } = useContext(VehicleContext);
-  console.log(vehicle);
-
   return (
     <>
       {!showInfo ? (

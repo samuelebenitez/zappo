@@ -1,36 +1,26 @@
-import Head from "next/head";
-import Image from "next/image";
-import styles from "../styles/Home.module.scss";
-import logoSVG from "../assets/logodarksvg.svg";
-import Link from "next/link";
+import style from "../styles/Home.module.scss";
+import VehicleType from "../components/VehicleType";
+import Layout from "../components/Layout";
 
-export default function Home() {
+export default function Vehicle() {
+  const vehicleSize = [
+    "auto chico",
+    "auto grande",
+    "camioneta ",
+    "svv",
+    "van o camioneta con caja",
+  ];
+
   return (
-    <>
-      <Head>
-        <title>Zappo || Hand Car Wash and Detailing</title>
-      </Head>
-
-      <section className={styles.container}>
-        <div className={styles.layer1}>
-          <div className={styles.up}>
-            <div className={styles.logoBox}>
-              <Image src={logoSVG} alt="logo" />
-            </div>
-            <h1 className={styles.title}>zappo</h1>
-          </div>
-
-          <div className={styles.wave}></div>
-
-          <div className={styles.down}>
-            <h2>bienvenido</h2>
-            <p>Pulse siguiente para elegir el servicio</p>
-            <Link href="/Servicios" passHref>
-              <button>siguiente</button>
-            </Link>
-          </div>
-        </div>
-      </section>
-    </>
+    <Layout>
+      <div className={style.vehicle_container}>
+        <h3 className={style.vehicle_section_subtitle}>
+          seleccione tipo de vehiculo
+        </h3>
+        {vehicleSize.map((vehicle, key) => (
+          <VehicleType key={key} vehicle={vehicle} />
+        ))}
+      </div>
+    </Layout>
   );
 }
