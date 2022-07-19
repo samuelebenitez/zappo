@@ -1,0 +1,16 @@
+.vehicle_container {
+  background-color: #0c0d0e;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+  .vehicle_section_subtitle {
+    font-size: 2em;
+    font-family: "Jost", sans-serif;
+    color: white;
+    text-transform: uppercase;
+    font-weight: lighter;
+  }
+}

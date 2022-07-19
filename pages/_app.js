@@ -1,13 +1,11 @@
 import "../styles/globals.css";
-import { ModalContextProvider } from "../contexts/modalcontext.js";
+import VehicleState from "../contexts/Vehicle/VehicleState";
 
 function MyApp({ Component, pageProps }) {
-  const infoToProvider = [];
-
   return (
-    <ModalContextProvider value={infoToProvider}>
+    <VehicleState>
       <Component {...pageProps} />
-    </ModalContextProvider>
+    </VehicleState>
   );
 }
 

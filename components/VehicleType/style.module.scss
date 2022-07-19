@@ -1,0 +1,20 @@
+.vehicle_type_container {
+  border: 1px solid white;
+  width: 70vw;
+  height: 10vh;
+  border-radius: 8px;
+  background-color: white;
+  display: grid;
+  place-items: center;
+  &:active {
+    border: 2px solid red;
+  }
+  cursor: pointer;
+  .vehicle_size {
+    font-family: "Jost", sans-serif;
+    font-size: 2rem;
+    text-align: center;
+    color: #0c0d0e;
+    text-transform: uppercase;
+  }
+}

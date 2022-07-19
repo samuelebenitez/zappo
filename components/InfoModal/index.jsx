@@ -7,7 +7,7 @@ export default function InfoModal({ showInfo, setShowInfo }) {
         X
       </button>
       <h1 className={style.modal_title}> Full Wax</h1>
-      <p className={style.modal_details}>
+      <div className={style.modal_details}>
         <ul className={style.modal_details_ul}>
           <li>Exterior completo</li>
           <li>Interior completo</li>
@@ -19,7 +19,7 @@ export default function InfoModal({ showInfo, setShowInfo }) {
         <div className={style.call_to_action}>
           <p>$2500</p>
         </div>
-      </p>
+      </div>
       <div className={style.modal_extra_info}>
         <p className={style.plus_size}>Vehiculos plus size + $200</p>
         <div className={style.incluye}>

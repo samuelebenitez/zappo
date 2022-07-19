@@ -6,9 +6,13 @@ import cartIcon from "../../assets/cartIcon.svg";
 import Link from "next/link";
 import { useToggle } from "../../hooks/useToggle";
 import CartResume from "../../components/CartResume";
+import { useContext } from "react";
+import VehicleContext from "../../contexts/Vehicle/VehicleContext";
 
 export default function Servicios() {
   const [cartResume, setCartResume] = useToggle();
+  const { vehicle } = useContext(VehicleContext);
+  console.log(vehicle);
 
   return (
     <div className={style.back}>
