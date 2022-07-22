@@ -1,20 +1,24 @@
 import style from "./style.module.scss";
 import VehicleContext from "../../contexts/Vehicle/VehicleContext";
-import React, { useContext, useEffect } from "react";
-import { useRouter } from "next/router";
+import React, { useContext, useEffect, useState, useRef } from "react";
 
 export default function VehicleType({ vehicle }) {
-  const vehicleContext = useContext(VehicleContext);
-  const router = useRouter();
+  const { selectedVehicle, selectVehicle } = useContext(VehicleContext);
 
-  function showMe(vehi) {
-    vehicleContext.selectVehicle(vehi);
-    router.push("/Services");
+  const boxRef = useRef(null);
+
+  useEffect(() => {
+    console.log(selectedVehicle);
+  }, [selectedVehicle]);
+
+  function coloredBox(vehi) {
+    selectVehicle(vehi);
   }
 
   return (
     <div
-      onClick={() => showMe(vehicle)}
+      onClick={() => coloredBox(vehicle)}
+      ref={boxRef}
       className={style.vehicle_type_container}
     >
       <p className={style.vehicle_size}>{vehicle}</p>

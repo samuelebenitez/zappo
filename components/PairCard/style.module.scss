@@ -1,40 +1,127 @@
 .pair_card_container {
-  width: 80vw;
-  height: 23vh;
-  border-radius: 8px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  .paircard_title {
-    font-size: 2.5em;
-    font-family: "Jost", sans-serif;
-    height: 5vh;
-    color: white;
-    text-align: center;
-    border: 1px solid white;
-    text-transform: uppercase;
-    width: fit-content;
-    padding: 0 1em;
-    &:first-child {
-      border: 10px solid;
-      border-image-slice: 1;
-      border-width: 3px;
-      border-radius: 40%;
-      border-image-source: linear-gradient(to left, #d48f0b, #c9bc0a);
+  gap: 2em;
+  .pair_card_container1 {
+    width: 80vw;
+    height: 15vh;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .paircard_title1 {
+      font-size: 2.5em;
+      font-family: "Jost", sans-serif;
+      height: 5vh;
+      color: white;
+      text-align: center;
+      border: 1px solid white;
+      text-transform: uppercase;
+      width: fit-content;
+      padding: 0 1em;
+      &:first-child {
+        border: 10px solid;
+        border-image-slice: 1;
+        border-width: 8px;
+        border-radius: 40%;
+        border-image-source: linear-gradient(to left, #afa99e, #24231f);
 
-      border-bottom: none;
+        border-bottom: none;
+      }
+    }
+    .paircard_info {
+      width: 80vw;
+      height: 17vh;
+      border: 1px solid white;
+      border-radius: 8px;
+      color: white;
+      display: flex;
+      .product {
+        width: 50%;
+      }
     }
   }
-  .paircard_info {
+
+  .pair_card_container2 {
     width: 80vw;
-    height: 17vh;
-    border: 1px solid white;
+    height: 15vh;
     border-radius: 8px;
-    color: white;
     display: flex;
-    .product {
-      width: 50%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .paircard_title2 {
+      font-size: 2.5em;
+      font-family: "Jost", sans-serif;
+      height: 5vh;
+      color: white;
+      text-align: center;
+      border: 1px solid white;
+      text-transform: uppercase;
+      width: fit-content;
+      padding: 0 1em;
+      &:first-child {
+        border: 10px solid;
+        border-image-slice: 1;
+        border-width: 8px;
+        border-radius: 40%;
+        border-image-source: linear-gradient(to left, #570909, #24231f);
+
+        border-bottom: none;
+      }
+    }
+    .paircard_info {
+      width: 80vw;
+      height: 17vh;
+      border: 1px solid white;
+      border-radius: 8px;
+      color: white;
+      display: flex;
+      .product {
+        width: 50%;
+      }
+    }
+  }
+
+  .pair_card_container3 {
+    width: 80vw;
+    height: 15vh;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .paircard_title3 {
+      font-size: 2.5em;
+      font-family: "Jost", sans-serif;
+      height: 5vh;
+      color: white;
+      text-align: center;
+      border: 1px solid white;
+      text-transform: uppercase;
+      width: fit-content;
+      padding: 0 1em;
+      &:first-child {
+        border: 10px solid;
+        border-image-slice: 1;
+        border-width: 8px;
+        border-radius: 40%;
+        border-image-source: linear-gradient(to left, #d48f0b, #c9bc0a);
+
+        border-bottom: none;
+      }
+    }
+    .paircard_info {
+      width: 80vw;
+      height: 17vh;
+      border: 1px solid white;
+      border-radius: 8px;
+      color: white;
+      display: flex;
+      .product {
+        width: 50%;
+      }
     }
   }
 }

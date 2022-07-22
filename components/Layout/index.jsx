@@ -7,30 +7,48 @@ import Link from "next/link";
 import logoSVG from "../../assets/logo.svg";
 import cartIcon from "../../assets/cartIcon.svg";
 import { useRouter } from "next/router";
+//context
+
+import VehicleContext from "../../contexts/Vehicle/VehicleContext";
+import React, { useContext, useEffec, useState } from "react";
 
 export default function Layout({ children }) {
   const router = useRouter();
+
   const route = router.route;
+  const { selectedVehicle } = useContext(VehicleContext);
+
+  console.log(selectedVehicle);
 
   const renderCallToAction = (ruta) => {
     switch (route) {
-      case "/Vehicle":
+      case "/":
         return (
           <div className={style.call_to_action}>
             <Link href="/Services">
-              <button className={style.next_button}>next</button>
+              {selectedVehicle ? (
+                <button className={style.next_button}>next</button>
+              ) : (
+                <button disabled className={style.next_button}>
+                  next
+                </button>
+              )}
             </Link>
           </div>
         );
-        break;
       case "/Services":
         return (
           <div className={style.call_to_action_services}>
             <button className={style.cart_button}>
               <i className="fa-solid fa-cart-shopping"></i>
             </button>
+            <p className={style.advertencia}>
+              porfavor, asegúrese de retirar sus objetos al entregar su vehiculo
+              y revisar al retirarlo. la empresa no se hará responsable por
+              faltantes o daños ocacionados una vez retirado el vehiculo
+            </p>
             <Link href="/comprar">
-              <button className={style.buy_button}>next</button>
+              <button className={style.next_button}>next</button>
             </Link>
           </div>
         );
@@ -59,7 +77,9 @@ export default function Layout({ children }) {
       {/* content children */}
       <div className={style.children}>{children}</div>
       {/* call to action bar */}
-      <section>{route && renderCallToAction(route)}</section>
+      <section className={style.actionbar}>
+        {route && renderCallToAction(route)}
+      </section>
     </div>
   );
 }

@@ -15,3 +15,27 @@
     }
   }
 }
+.alfombra_container {
+  width: 50vw;
+  margin: 3em 0 0 0;
+  color: white;
+  .option1 {
+    display: flex;
+    padding: 0.5em;
+    border: 1px solid white;
+    margin: 0.5em 0;
+    gap: 1em;
+    align-items: center;
+    .buttonn {
+      padding: 0.5em;
+      i {
+        font-size: 2.5em;
+        width: 100%;
+        color: #0c0d0e;
+      }
+    }
+    .textt {
+      font-size: 1.8em;
+    }
+  }
+}

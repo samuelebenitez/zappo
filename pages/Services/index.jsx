@@ -1,5 +1,4 @@
 import style from "./style.module.scss";
-import Card from "../../components/Card";
 import useFetchProducts from "../../hooks/useFetchData";
 import Layout from "../../components/Layout";
 import PairCard from "../../components/PairCard";
@@ -20,9 +19,24 @@ export default function Servicios() {
           <i className="fa-solid fa-reply"></i>
         </button>
       </div>
-      {/* <PairCard />
-      <PairCard />
-      <PairCard /> */}
+      <div className={style.paircard_container}>
+        <PairCard />
+      </div>
+
+      <div className={style.alfombra_container}>
+        <div className={style.option1}>
+          <button className={style.buttonn}>
+            <i className="fa-solid fa-plus"></i>
+          </button>
+          <p className={style.textt}>Una alfombra (1)</p>
+        </div>
+        <div className={style.option1}>
+          <button className={style.buttonn}>
+            <i className="fa-solid fa-plus"></i>
+          </button>
+          <p className={style.textt}>Cuatro alfombras (4)</p>
+        </div>
+      </div>
     </Layout>
   );
 }
