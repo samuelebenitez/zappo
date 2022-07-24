@@ -16,17 +16,14 @@
       height: 5vh;
       color: white;
       text-align: center;
-      border: 1px solid white;
       text-transform: uppercase;
       width: fit-content;
       padding: 0 1em;
       &:first-child {
-        border: 10px solid;
+        border: 10px;
         border-image-slice: 1;
-
         border-radius: 40%;
         border-image-source: linear-gradient(to left, #afa99e, #24231f);
-
         border-bottom: none;
       }
     }
@@ -57,17 +54,14 @@
       height: 5vh;
       color: white;
       text-align: center;
-      border: 1px solid white;
       text-transform: uppercase;
       width: fit-content;
       padding: 0 1em;
       &:first-child {
-        border: 10px solid;
+        border: 10px;
         border-image-slice: 1;
-
         border-radius: 40%;
         border-image-source: linear-gradient(to left, #570909, #24231f);
-
         border-bottom: none;
       }
     }
@@ -98,17 +92,14 @@
       height: 5vh;
       color: white;
       text-align: center;
-      border: 1px solid white;
       text-transform: uppercase;
       width: fit-content;
       padding: 0 1em;
       &:first-child {
-        border: 10px solid;
+        border: 10px;
         border-image-slice: 1;
-
         border-radius: 40%;
         border-image-source: linear-gradient(to left, #d48f0b, #c9bc0a);
-
         border-bottom: none;
       }
     }
